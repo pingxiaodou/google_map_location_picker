@@ -1,0 +1,10 @@
+{
+  "please_check_your_connection": "請檢查您的網絡連接",
+  "server_error": "服務異常",
+  "access_to_location_denied": "定位權限被拒絕",
+  "allow_access_to_the_location_services": "獲取到定位權限",
+  "ok": "Ok",
+  "cant_get_current_location": "可以獲取當前位置",
+  "please_make_sure_you_enable_gps_and_try_again": "請確認是否打開了GPS并重試",
+  "search_place": "搜索"
+}
