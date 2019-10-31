@@ -31,6 +31,31 @@ class S implements WidgetsLocalizations {
   String get server_error => "Server error";
 }
 
+class $zh extends S {
+  const $zh();
+
+  @override
+  TextDirection get textDirection => TextDirection.ltr;
+
+  @override
+  String get cant_get_current_location => "可以獲取當前位置";
+  @override
+  String get access_to_location_denied => "定位權限被拒絕";
+  @override
+  String get allow_access_to_the_location_services => "獲取到定位權限";
+  @override
+  String get server_error => "服務異常";
+  @override
+  String get search_place => "搜索";
+  @override
+  String get ok => "Ok";
+  @override
+  String get please_check_your_connection => "請檢查您的網絡連接";
+  @override
+  String get please_make_sure_you_enable_gps_and_try_again => "請確認是否打開了GPS并重試";
+}
+
+
 class $ar extends S {
   const $ar();
 
@@ -112,6 +137,7 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
 
   List<Locale> get supportedLocales {
     return const <Locale>[
+      Locale("zh", "HK"),
       Locale("ar", ""),
       Locale("pt", ""),
       Locale("en", ""),
@@ -140,6 +166,9 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
     final String lang = getLang(locale);
     if (lang != null) {
       switch (lang) {
+        case "zh":
+          S.current = const $zh();
+          return SynchronousFuture<S>(S.current);
         case "ar":
           S.current = const $ar();
           return SynchronousFuture<S>(S.current);
